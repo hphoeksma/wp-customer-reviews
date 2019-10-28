@@ -1,12 +1,12 @@
 {
-    "name": "henjohoeksma/wp-customer-reviews",
+    "name": "hphoeksma/wp-customer-reviews",
     "description": "A dutch implementation of wp-customer-reviews",
     "type": "wordpress-plugin",
     "license": "MIT",
     "authors": [
         {
             "name": "Henjo Hoeksma",
-            "email": "henjo@upassist.com"
+            "email": "me@henjohoeksma.nl"
         }
     ]
 }
