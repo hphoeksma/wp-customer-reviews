@@ -1,0 +1,59 @@
+%---
+NOTICE: Changes made to this file do nothing.
+Additionally, this file will be overwritten with each plugin update and/or activation.
+If you have the Pro version, you can edit this file via plugin settings without it being overwritten.
+---%
+
+{{:showform}}
+<div class="wpcr3_respond_2">
+    <div class="wpcr3_div_2">
+        <div class="wpcr3_table_2">
+            <div class="table__row">
+                <div class="wpcr3_leave_text">
+                    Verzend je review
+                </div>
+            </div>
+            <div class="table__row">
+                {{input_fields}}
+            </div>
+            <div class="table__row">
+                {{rating_field}}
+            </div>
+            <div class="table__row">
+                {{review_field}}
+            </div>
+            <div class="table__row">
+                <div class="wpcr3_clear"></div>
+                <input type="hidden" name="wpcr3_postid" value="{{postid}}"/>
+                <input type="text" class="wpcr3_fakehide wpcr3_fake_website" name="website"/>
+                <input type="text" class="wpcr3_fakehide wpcr3_fake_url" name="url"/>
+                <input type="checkbox" class="wpcr3_fakehide wpcr3_fconfirm1" name="wpcr3_fconfirm1" value="1"/>
+                <label class="wpcr3_robot">
+                    <input type="checkbox" name="wpcr3_fconfirm2" class="wpcr3_fconfirm2" value="1"/>
+                    &nbsp; Vink aan om aan te geven dat je geen robot bent.
+                </label>
+                <input type="checkbox" class="wpcr3_fakehide wpcr3_fconfirm3" name="wpcr3_fconfirm3"
+                       checked="checked" value="1"/>
+            </div>
+            <div class="table__row">
+				<div class="wpcr3_button_1 wpcr3_cancel_btn">Annuleren</div>
+                <div class="wpcr3_button_1 wpcr3_submit_btn">Verzenden</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wpcr3_clear wpcr3_pb5"></div>
+<div class="wpcr3_respond_3">
+    <p>
+    <div class="wpcr3_button_1 wpcr3_show_btn">
+        Geef een review
+    </div>
+    </p>
+    {{!found_posts}}
+    <p class="wpcr3_no_reviews">
+        Er zijn nog geen reviews.
+    </p>
+    {{/found_posts}}
+</div>
+<div class="wpcr3_dotline"></div>
+{{/showform}}
